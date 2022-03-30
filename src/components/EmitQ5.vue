@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>This is Emit page</h1>
+      <h1>This is Emit</h1>
     <h2>email:{{ name }}</h2>
 
     <input
