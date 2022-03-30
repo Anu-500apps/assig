@@ -1,14 +1,27 @@
 <template>
   <div>
+    <b-card
+      title="Hello World"
+      img-src="https://picsum.photos/600/300/?image=25"
+      img-alt="Image"
+      img-top
+      tag="article"
+      style="max-width: 20rem"
+      class="mb-2"
+    >
+      <b-card-text>
     <h1>This is Bcard</h1>
     <p v-for="Anu in table" :key="Anu.id">
-    {{ table.name }}{{ table.description }}</p>
+      {{ table.name }}{{ table.description }}
+    </p>
+      </b-card-text>
+    </b-card>
   </div>
 </template>
 <script>
 export default {
-    name:"BcarD",
-    data() {
+  name: "BcarD",
+  data() {
     return {
       table: [
         { name: "agile CRM", description: "A comapany of exsellence" },
