@@ -1,7 +1,8 @@
 <template>
     <div>
         <h1>This is function block</h1>
-        <p v-for="arra in array" :key="arra.id"> {{arra.name}}{{arra.phone}}</p>
+       <p v-for="arra in array" :key="arra.id"> 
+           {{arra.name}}{{arra.phone}}</p>
             <button type="submit" @click="function1()">Click here</button>
     </div>
 </template>
