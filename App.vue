@@ -1,42 +1,67 @@
 <template>
   <div id="app">
-    <h1>Vue Webpage</h1>
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Table-v />
-    <Vfor />
-    <Local :msg="msg" :name="name" :number="number"></Local><br><br>
-    <Child msg="This is static props" name="Anu" number="7330797147"></Child><br />
-    <Bcard />
+    <!--<img alt="Vue logo" src="https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg"><br />-->
+    <!--<AdditonNumbers /> 
+    <Anu1 />
+    <Card  :msg="message" :name="name" :number="number" :array="array"></Card>
+    <Static msg="This is static props" name="anu" number="23456789"></Static><br />
+    <refeSe ref="name123" name="Anu">{{name}}</refeSe><br />
+    <Anu />
+    <Card />
+    <Es6 />
+    <Filter />
+    <Fun />-->
     <Emit />
-    <btable/>
+    <Tbale />
   </div>
 </template>
 
-
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-//import TableV from './components/question1/TableV.vue'
-//import Vfor from './components/questuin2/Vfor.vue'
-//import Local from './components/question3/Local.vue'
-//import Child from './components/question4/Child.vue'
-//import Bcard from './components/question6/Bcard.vue'
-import Emit from './components/EmitQ5.vue'
-import btable from './components/btable.vue'
+// import HelloWorld from './components/HelloWorld.vue' 
+//import AdditonNumbers from './components/AdditonNumbers.vue'
+//import Anu1 from './components/AnuTest.vue'
+//import Card from '@/new.vue' 
+//import Static from '@/components/static.vue'
+//import refeSe from '@/components/Refss.vue'
+//import card from './components/Card.vue'
+//import Es6 from './components/Es6.vue'
+//import Filter from './components/Filter.vue'
+//import Fun from './components/function-1.vue'
+import Emit from './components/Emit.vue'
+//import Anu from '@/components/TableView.vue'
+//import Table from '@/components/table.vue'
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-    //TableV,
-    //Vfor,
-    //Child,
-    //Local,
-    //Bcard
+
+    // HelloWorld,
+    //AdditonNumbers,
+    //Anu1,
+    //Card,
+    //Static,
+    //refeSe,
+    //card
+    //Es6,
+    //Filter
+    //Fun
     Emit,
-    btable
-},
-  } 
+    //Anu
+    //Table
+
+  
+  },
+  data(){
+    return{
+      message:"welcome to vue",
+      name:"Anuradha",
+      number:"7330797147",
+    }
+ },
+ mounted:function(){
+   this.message=this.$refs.name123.name;
+ }
+}
 </script>
 
 <style>
@@ -49,3 +74,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
