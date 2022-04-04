@@ -1,5 +1,29 @@
 <template>
   <div>
+    <!-- <div>
+
+<form name="form">
+
+<label for="Status">Status</label>
+
+<select id='stat'>
+
+<option>Select</option>
+
+<option @click="opens()">open</option>
+
+<p>{{opendata}}</p>
+
+
+<option @click="pending()">Pending</option>
+
+<option @click="close()">Closed</option>
+
+</select>
+
+</form>
+
+</div>-->
 
     <button @click="opens()">Opens</button>
 
@@ -15,7 +39,50 @@
 
     <p>{{ closeddata }}</p>
   </div>
+
+  <!-- <div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<td>Email</td>
+
+<td>Id</td>
+
+<td>Name</td>
+
+<td>Status</td>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr v-for="data1 in data" :key="data1.id">
+
+<td>{{data1.opendata.email}}</td>
+
+<td>{{data1.id}}</td>
+
+<td>{{data1.name}}</td>
+
+<td>{{data1.status}}</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+</div>-->
 </template>
+
+
 <script>
 export default {
   name: "queS7",
