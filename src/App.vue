@@ -10,7 +10,6 @@
     <Bcard />
     <Emit />
     <btable/>
-    <Q10 />
     <Q3 />
     <Q7 />
     
@@ -27,8 +26,7 @@
 //import Bcard from './components/question6/Bcard.vue'
 //import Emit from './components/EmitQ5.vue'
 //import btable from './components/btable.vue'
-import Q10 from './components/Assignment-2/Q10.html'
-import Q3 from './components/Assignment-2/Q3.vue'
+//import Q3 from './components/Assignment-2/Q3.vue'
 import Q7 from './components/Assignment-2/Q7.vue'
 
 export default {
@@ -42,8 +40,7 @@ export default {
     //Bcard
     //Emit,
     //btable
-    Q10,
-    Q3,
+    //Q3,
     Q7
   
 },
