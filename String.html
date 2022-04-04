@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<h1>This is question number 7</h1>
+<p id="demo"></p>
+<body>
+    <script>
+      var users = [{ id: 20, name: 'Captain Piett' },
+
+        { id: 24, name: 'General Veers' },
+
+        { id: 56, name: 'Admiral Ozzel' },
+
+        { id: 88, name: 'Commander Jerjerrod' }];
+
+
+        let index = users.findIndex(x => x.id === 88);
+
+        document.getElementById("demo").innerHTML = index;
+
+   </script>
+</body>
+</html>
