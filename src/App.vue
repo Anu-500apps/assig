@@ -9,6 +9,10 @@
     <Child msg="This is static props" name="Anu" number="7330797147"></Child><br />
     <Bcard />
     <Emit />
+    <btable/>
+    <Q10 />
+    <Q3 />
+    
   </div>
 </template>
 
@@ -20,7 +24,10 @@
 //import Local from './components/question3/Local.vue'
 //import Child from './components/question4/Child.vue'
 //import Bcard from './components/question6/Bcard.vue'
-import Emit from './components/EmitQ5.vue'
+//import Emit from './components/EmitQ5.vue'
+//import btable from './components/btable.vue'
+import Q10 from './components/Assignment-2/Q10.html'
+import Q3 from './components/Assignment-2/Q3.vue'
 
 export default {
   name: 'App',
@@ -31,7 +38,11 @@ export default {
     //Child,
     //Local,
     //Bcard
-    Emit
+    //Emit,
+    //btable
+    Q10,
+    Q3
+  
 },
   } 
 </script>

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <center><h1>This is Form</h1>
+         <p id="anu"></p>
+        <form onsubmit="myFunction(anu1,anu2)">
+            <label for="name">lastname:</label>
+            <input type="text" id="anu1" firstname="name" placeholder="enter name"  required><br><br>
+            <lable for="pwd" >lastname:</lable>
+            <input type="tet" id="anu2" lastname="name" placeholder="enter number" required><br><br>
+           <button type="submit" >SUBMIT</button>
+        </form></center>
+        <script>
+            function myFunction(anu1,anu2){
+                document.write(document.getElementById("anu1").value = "full name is " + anu1.value+" "+anu2.value);
+            }
+        </script>
+    </body>
+</html>
