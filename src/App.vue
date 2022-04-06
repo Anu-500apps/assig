@@ -17,6 +17,7 @@
     <Q6  ref="name" name="Anu">{{name}}</Q6><br />
     <Q10 />
     <Q9 />
+    <button @click="func()">ref</button>
   </div>
 </template>
 
@@ -32,11 +33,11 @@
 //import btable from './components/btable.vue'
 //import Q3 from './components/Assignment-2/Q3.vue'
 //import Q7 from './components/Assignment-2/Q7.vue'
-//import Q5 from './components/Assignment-3/Q5.vue'
-import Q8 from './components/Assignment-3/Q8.vue'
+// import Q5 from './components/Assignment-3/Q5.vue'
+// import Q8 from './components/Assignment-3/Q8.vue'
 import Q6 from './components/Assignment-3/Q6ref.vue'
-import Q10 from './components/Assignment-3/Q10.vue'
-import Q9 from './components/Assignment-3/Q9.vue'
+// import Q10 from './components/Assignment-3/Q10.vue'
+// import Q9 from './components/Assignment-3/Q9.vue'
 
 export default {
   name: 'App',
@@ -51,29 +52,21 @@ export default {
     //btable
     //Q3,
     //Q7
-    //Q5,
-    Q8,
+    // Q5,
+    // Q8,
     Q6,
-    Q10,
-    Q9
+    // Q10,
+    // Q9
   
   
 },
-mounted:function(){
-  this.name=this.$ref.name
-  
+methods:{
+  func(){
+    this.$refs.name.fun();
+    console.log("parent")
+  }
 }
   } 
 
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

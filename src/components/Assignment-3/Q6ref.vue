@@ -1,18 +1,20 @@
 <template>
     <div>
-        <h1>iam child</h1>
-        <h1>{{name}}</h1>
+       iam child
+       
     </div>
 </template>
 <script>
 export default{
     name : "refeSe",
-    props:{
-        name:String
+    data(){
+        return{
+
+        }
     },
     methods:{
         fun(){
-            alert()
+            alert("child")
         }
     }
 }
