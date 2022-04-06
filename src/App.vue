@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Vue Webpage</h1>
+   <h1>Vue Webpage</h1>
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Table-v />
@@ -12,7 +12,9 @@
     <btable/>
     <Q3 />
     <Q7 />
-    
+    <Q5 />
+    <Q8 />
+    <Q6  ref="name123" name="Anu">{{name}}</Q6><br />
   </div>
 </template>
 
@@ -27,7 +29,10 @@
 //import Emit from './components/EmitQ5.vue'
 //import btable from './components/btable.vue'
 //import Q3 from './components/Assignment-2/Q3.vue'
-import Q7 from './components/Assignment-2/Q7.vue'
+//import Q7 from './components/Assignment-2/Q7.vue'
+//import Q5 from './components/Assignment-3/Q5.vue'
+import Q8 from './components/Assignment-3/Q8.vue'
+import Q6 from './components/Assignment-3/Q6ref.vue'
 
 export default {
   name: 'App',
@@ -41,7 +46,11 @@ export default {
     //Emit,
     //btable
     //Q3,
-    Q7
+    //Q7
+    //Q5,
+    Q8,
+    Q6
+  
   
 },
   } 

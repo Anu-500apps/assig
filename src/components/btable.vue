@@ -9,7 +9,7 @@
     name:"BtablE",
     data() {
       return {
-        fields:['iso3','name'],
+        fields:['iso3','name'],   
         items: [{ name: 'Barbados', iso3: 'BRB' },
   { name: 'Brunei Darussalam', iso3: 'BRN' },
   { name: 'Bhutan', iso3: 'BTN' },

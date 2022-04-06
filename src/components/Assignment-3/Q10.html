@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Handling error in Javascript</h2>
+    <script>
+       function myfun() {
+           try {
+                count = count * 5;
+                console.log("printing count", count);
+            }
+            catch (error) {
+                document.write(error.message);
+            }
+        }
+       myfun();
+   </script>
+</body>
+</html>
