@@ -1,5 +1,22 @@
 <html>
-    <head>
-        <h1>form</h1>
-    </head>
+    <body>
+        <center><h1>This is Form</h1>
+         <p id="anu"></p>
+        <form onsubmit="myFunction(anu1,anu2,anu3,anu4)">
+            <label for="name">Name:</label>
+            <input type="text" id="anu1" name="name" placeholder="enter name"  required><br><br>
+            <lable for="email" >Email:</lable>
+            <input type="email" id="anu2" name="email" placeholder="enter mail" required><br><br>
+            <label for="age">age:</label>
+            <input type="text" id="anu3" name="age" placeholder="enter age"  required><br><br>
+            <label for="name">phone:</label>
+            <input type="text" id="anu4" name="phone" placeholder="enter phone"  required><br><br>
+           <button type="submit" >SUBMIT</button>
+        </form></center>
+        <script>
+            function myFunction(anu1,anu2,anu3,anu4){
+                document.write(document.getElementById("anu").value = anu1.value+"    "+anu2.value+"    "+anu3.value+"   "+anu4.value);
+            }
+        </script>
+    </body>
 </html>

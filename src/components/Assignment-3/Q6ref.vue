@@ -1,25 +1,18 @@
 <template>
     <div>
-        <button type="submit" @onclick="myfunction()">This is refs</button>
+        iam child
     </div>
 </template>
 <script>
 export default{
     name : "refeSe",
     props:{
-        name:String,
+        name:String
     },
-    data(){
-        return{
-
+    methods:{
+        fun(){
+            alert()
         }
-    },
-    method:{
-         myfunction() { 
-
-             console.log(this.name)
-
-         }
     }
 }
 </script>

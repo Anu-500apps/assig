@@ -14,7 +14,9 @@
     <Q7 />
     <Q5 />
     <Q8 />
-    <Q6  ref="name123" name="Anu">{{name}}</Q6><br />
+    <Q6  ref="name" name="Anu">{{name}}</Q6><br />
+    <Q10 />
+    <Q9 />
   </div>
 </template>
 
@@ -33,6 +35,8 @@
 //import Q5 from './components/Assignment-3/Q5.vue'
 import Q8 from './components/Assignment-3/Q8.vue'
 import Q6 from './components/Assignment-3/Q6ref.vue'
+import Q10 from './components/Assignment-3/Q10.vue'
+import Q9 from './components/Assignment-3/Q9.vue'
 
 export default {
   name: 'App',
@@ -49,11 +53,18 @@ export default {
     //Q7
     //Q5,
     Q8,
-    Q6
+    Q6,
+    Q10,
+    Q9
   
   
 },
+mounted:function(){
+  this.$ref.Q6.name
+  
+}
   } 
+
 </script>
 
 <style>
