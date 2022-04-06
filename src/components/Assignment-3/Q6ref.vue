@@ -1,6 +1,7 @@
 <template>
     <div>
-        iam child
+        <h1>iam child</h1>
+        <h1>{{name}}</h1>
     </div>
 </template>
 <script>

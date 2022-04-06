@@ -60,7 +60,7 @@ export default {
   
 },
 mounted:function(){
-  this.$ref.Q6.name
+  this.name=this.$ref.name
   
 }
   } 
