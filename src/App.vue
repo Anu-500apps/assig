@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   <h1>Vue Webpage</h1>
+   <h1 align="center">Vue Webpage</h1>
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Table-v />
@@ -14,10 +14,11 @@
     <Q7 />
     <Q5 />
     <Q8 />
-    <Q6  ref="name" name="Anu">{{name}}</Q6><br />
+    <Q6  ref="name" name="Anu">{{name}}</Q6>
+    <center>
+    <button @click="func()">ref</button></center><br><br><br>
     <Q10 />
     <Q9 />
-    <button @click="func()">ref</button>
   </div>
 </template>
 
@@ -33,11 +34,11 @@
 //import btable from './components/btable.vue'
 //import Q3 from './components/Assignment-2/Q3.vue'
 //import Q7 from './components/Assignment-2/Q7.vue'
-// import Q5 from './components/Assignment-3/Q5.vue'
-// import Q8 from './components/Assignment-3/Q8.vue'
-import Q6 from './components/Assignment-3/Q6ref.vue'
-// import Q10 from './components/Assignment-3/Q10.vue'
-// import Q9 from './components/Assignment-3/Q9.vue'
+ import Q5 from './components/Assignment-3/Q5.vue'
+ import Q8 from './components/Assignment-3/Q8.vue'
+ import Q6 from './components/Assignment-3/Q6ref.vue'
+ import Q10 from './components/Assignment-3/Q10.vue'
+ import Q9 from './components/Assignment-3/Q9.vue'
 
 export default {
   name: 'App',
@@ -52,11 +53,11 @@ export default {
     //btable
     //Q3,
     //Q7
-    // Q5,
-    // Q8,
-    Q6,
-    // Q10,
-    // Q9
+     Q5,
+     Q8,
+     Q6,
+     Q10,
+     Q9
   
   
 },

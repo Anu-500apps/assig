@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button @click="fullnames()">FullName</button>
+  <div><center>
+    <button @click="fullnames()">FullName-Q5</button></center><br><br><br>
   </div>
 </template>
 <script>

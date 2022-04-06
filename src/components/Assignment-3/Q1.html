@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<head>
-   <form name="myform" method="post" onsubmit="myfun()">
-     <input type="text" name="word" placeholder="Enter Text" />
-       <button onclick="myfun()">Search</button>
+<head><center>
+   <form name="myform" onsubmit="fun()">
+     <input type="text" name="latter" placeholder="Enter Text" />
+       <button onclick="fun()">Search</button></center>
    </form>
 </head>
 <body>
-   <p id="root"></p>
      <script>
-       function myfun() {
+       function fun() {
             const array = ["agile", "crm", "mantra", "technologies", "500apps", "infinity"];
-            const substring = document.myform.word.value;
+            const substring = document.myform.latter.value;
             const match = array.find(element => {
                 if (element.includes(substring)) {
 

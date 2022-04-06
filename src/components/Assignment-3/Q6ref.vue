@@ -1,6 +1,6 @@
 <template>
     <div>
-       iam child
+     <h4 align="center">  I am child  </h4>
        
     </div>
 </template>
