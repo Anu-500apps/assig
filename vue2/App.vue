@@ -27,10 +27,9 @@
 //import Es6 from './components/Es6.vue'
 //import Filter from './components/Filter.vue'
 //import Fun from './components/function-1.vue'
-import Emit from './components/Emit.vue'
+//import Emit from './components/Emit.vue'
 //import Anu from '@/components/TableView.vue'
 //import Table from '@/components/table.vue'
-
 export default {
   name: 'App',
   components: {
@@ -45,7 +44,7 @@ export default {
     //Es6,
     //Filter
     //Fun
-    Emit,
+    //Emit,
     //Anu
     //Table
 

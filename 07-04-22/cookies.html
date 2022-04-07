@@ -2,27 +2,27 @@
 <html>
 <head>
     <title>cookies</title>
-    <h3>This is Cookies page</h3>
+    <h3 align="center">This is Cookies page</h3>
 </head>
-<body>
+<body><center>
     <form name="myform" onsubmit="cookies()">
 
-        <label for="name">name:</label>
+        <label for="name">Name:</label>
 
-        <input type="text" name="name" id="name" required><br><br><br>
+        <input type="text" name="name" id="name" required><br><br>
 
-        <label for="password">password:</label>
+        <label for="password">Password:</label>
 
-        <input type="password" name="password" id="password" required><br><br><br>
+        <input type="password" name="password" id="password" required><br><br>
 
         <button onclick="createCookie()">submit</button>
-    </form>
+    </form></center>
     <script>
         function cookies() {
           document.write(document.myform.name.value + "<br>" + document.myform.password.value);
          // document.write("hi");
        }
-       function createCookie(name, psw) {
+       function createCookie(nam, psw) {
            let name = document.getElementById('name');
           let password = document.getElementById('password');
            today = new Date();
