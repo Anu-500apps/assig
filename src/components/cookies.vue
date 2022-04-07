@@ -1,12 +1,17 @@
 <template>
     <div>
         <h3 align="center"></h3>
-        <button @click="createCookie">Cookie</button>
+      <center>  <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="enter name"><br>
+        <label for="password">password:</label>
+        <input type="password" name="password" placeholder="enter password"><br>
+        <button @click="createCookie">Cookie</button></center>
     </div>
 </template>
 <script>
 
 export default {
+    name:"CookiE",
     data() {
         return{
 
