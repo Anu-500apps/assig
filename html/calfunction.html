@@ -1,0 +1,17 @@
+<html>
+    <body>
+<h2>this is calling</h2>
+<p id="anu"></p>
+<script>
+const a = {
+    first:"anu",
+    second:"taddi",
+    number:"123456789",
+    fullname: function demo() {
+     return  this.first + " " + this.second +" "+this.number; 
+    }
+}
+document.getElementById("anu").innerHTML=a.fullname();
+</script>
+    </body>
+</html>

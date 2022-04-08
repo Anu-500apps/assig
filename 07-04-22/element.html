@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="anu1" align="center">
+        <p id="demo1">This is first para</p>
+        <p id="demo2">This is second para.</p>
+        <p id="demo3">This is third para. </p>
+    </div>
+    <script>
+        const para = document.createElement("h3");
+        const anu = document.createTextNode("This is a new element");
+        para.appendChild(anu);
+        const element = document.getElementById("anu1");
+        element.appendChild(para);
+    </script>
+</body>
+
+</html>
