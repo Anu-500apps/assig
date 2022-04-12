@@ -1,0 +1,16 @@
+<!DOCTYPE html><head>
+<h1 align="center">This is length of string</h1>
+</head>
+<body><center>
+    <form name="form" onsubmit="validateform()">
+        <input type="text" name="string" placeholder="Enter text" required><br /> <br>
+        <input type="submit" value="count">
+    </form></center>
+    <script>
+        function validateform() {
+            var a = document.form.string.value;
+            console.log(a.length);
+        }
+    </script>
+</body>
+</html>
