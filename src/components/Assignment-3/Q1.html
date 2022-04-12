@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<head><center>
-   <form name="myform" onsubmit="fun()">
-     <input type="text" name="latter" placeholder="Enter Text" />
-       <button onclick="fun()">Search</button></center>
-   </form>
-</head>
+<html>
 <body>
-     <script>
-       function fun() {
-            const array = ["agile", "crm", "mantra", "technologies", "500apps", "infinity"];
-            const substring = document.myform.latter.value;
-            const match = array.find(element => {
-                if (element.includes(substring)) {
-
-                    return true;
-               }
-           });
-            document.write(match);
-            if (match !== undefined) {
-           }
-       }
-    </script>
+   <h1 align="center"> Inbuilt Array Methods </h1>
+   <p id="demo1" align="center"></p>
+   <p id="demo2" align="center"></p>
 </body>
-</html>
+<script>
+   var array1 = [1, 2, 3, 7, 8, 6, 9, 10];
+     document.getElementById("demo1").innerHTML ="Given array is=" + " " + array1;
+     array1.splice(5, 0, 4, 5);
+     document.getElementById("demo2").innerHTML = "This is orinal array=" + " " + array1;
+</script>
